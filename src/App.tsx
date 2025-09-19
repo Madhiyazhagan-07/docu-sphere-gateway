@@ -9,7 +9,12 @@ import Signup from "./pages/Signup";
 import Search from "./pages/Search";
 import Introduction from "./pages/docs/Introduction";
 import Installation from "./pages/docs/Installation";
+import QuickStart from "./pages/docs/QuickStart";
 import Buttons from "./pages/docs/components/Buttons";
+import Forms from "./pages/docs/components/Forms";
+import Navigation from "./pages/docs/components/Navigation";
+import Cards from "./pages/docs/components/Cards";
+import Performance from "./pages/docs/advanced/Performance";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -29,12 +34,12 @@ const App = () => (
           {/* Documentation Routes */}
           <Route path="/docs/introduction" element={<Introduction />} />
           <Route path="/docs/installation" element={<Installation />} />
-          <Route path="/docs/quick-start" element={<Introduction />} />
+          <Route path="/docs/quick-start" element={<QuickStart />} />
           <Route path="/docs/components/buttons" element={<Buttons />} />
-          <Route path="/docs/components/forms" element={<Buttons />} />
-          <Route path="/docs/components/navigation" element={<Buttons />} />
-          <Route path="/docs/components/cards" element={<Buttons />} />
-          <Route path="/docs/advanced/performance" element={<Introduction />} />
+          <Route path="/docs/components/forms" element={<Forms />} />
+          <Route path="/docs/components/navigation" element={<Navigation />} />
+          <Route path="/docs/components/cards" element={<Cards />} />
+          <Route path="/docs/advanced/performance" element={<Performance />} />
           <Route path="/docs/advanced/optimization" element={<Introduction />} />
           <Route path="/docs/advanced/best-practices" element={<Introduction />} />
           <Route path="/docs/security/authentication" element={<Introduction />} />
